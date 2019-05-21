@@ -19,9 +19,9 @@ Ask Izzy Plus is a self-service application built to our client Infoxchange's sp
 
 [![Nodebusters Logo](docs/images/nodebusters-logo-small.png)](https://github.com/nodebusters/)
 
-|[![Diego Rodriguez](/docs/contributors/contributors-diegorodriguez2018-70x70.jpg)](https://github.com/DiegoRodriguez2018)| [![Aitzu Hu](/docs/contributors/contributors-Aitzu-70x70.jpg)](https://github.com/Aitzu) | [![Linda Lai](/docs/contributors/contributors-linda-lai-70x70.jpg)](https://github.com/linda-lai)| [![James Hastings](/docs/contributors/contributors-omegadefender-70x70.jpg)](https://github.com/omegadefender) 
-|-----------|-----------|-------------| ------------- |
-| Diego Rodriguez | Aitzu Hu | Linda Lai | James Hastings |
+|[![Diego Rodriguez](/docs/contributors/contributors-diegorodriguez2018-70x70.jpg)](https://github.com/DiegoRodriguez2018)| [![Aitzu Hu](/docs/contributors/contributors-Aitzu-70x70.jpg)](https://github.com/Aitzu) | [![Linda Lai](/docs/contributors/contributors-linda-lai-70x70.jpg)](https://github.com/linda-lai)|
+|-----------|-----------|-------------| 
+| Diego Rodriguez | Aitzu Hu | Linda Lai |
 
 ## Contents <!-- omit in toc -->
 - [Ask Izzy Plus Links](#ask-izzy-plus-links)

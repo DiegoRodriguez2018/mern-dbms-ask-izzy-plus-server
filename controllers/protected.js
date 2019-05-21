@@ -50,9 +50,13 @@ router.get('/admin/dashboard', (req, res) => {
 //Checks if the user exists in the authorised users database, if so it responds with the user organisation data.
 router.get('/getUserData', (req, res) => {
   const { token } = req.headers;
-  const decoded = jwtDecode(token);
-  const { email } = decoded;
-  //Accessing the data from organisation based on the email.
+  let email;
+  if (token==="guest_user"){
+    email = token;
+  }else{
+    const decoded = jwtDecode(token);
+    email= decoded.email;
+  }
   const Organisation = require('../models/Organisation');
   const User = require('../models/User');
   User.findOne({ email })
@@ -123,7 +127,6 @@ router.put('/site/:org_id/:site_id', (req, res) => {
     organisation.save(() => {
       res.send(organisation);
     });
- 
   });
 });
 
@@ -170,11 +173,10 @@ router.put('/service/:org_id/:site_id/:service_id', (req, res) => {
       const val = req.body[key];
       return `<li>${key.toUpperCase()}: ${val}</li>`;
     });
-
   });
 });
 
-// Delete Service 
+// Delete Service
 router.delete('/service/:org_id/:site_id/:service_id', (req, res) => {
   const { org_id, site_id, service_id } = req.params;
   Organisation.findById(new ObjectId(org_id), (err, organisation) => {
